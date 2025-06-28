@@ -22,4 +22,3 @@ This project is a **vehicle image classification model** built using **TensorFlo
 - 🔄 Splitting: 80% training, 20% validation
 - 📏 Image Size: `224x224`
 
-> You must organize your dataset like:
