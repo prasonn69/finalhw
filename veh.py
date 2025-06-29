@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Streamlit app title
-st.title("🚗 Vehicle Image Classifier with MobileNetV2")
+st.title(" Vehicle Image Classifier with MobileNetV2")
 
 # Set your dataset path
 data_dir = "//Users/prason/Downloads/Dataset"
@@ -38,7 +38,7 @@ def load_data():
     return train_ds, val_ds, train_ds.class_names
 
 train_ds, val_ds, class_names = load_data()
-st.success(f"✅ Classes loaded: {class_names}")
+st.success(f"Classes loaded: {class_names}")
 
 # Model architecture
 @st.cache_resource
@@ -63,7 +63,7 @@ def build_model():
 model = build_model()
 
 # Training
-if st.button("👨‍🏫 Train Model (Takes time)"):
+if st.button(" Train Model (Takes time)"):
     history = model.fit(train_ds, validation_data=val_ds, epochs=10)
     model.save("vehicle_classifier_model.keras")
     st.success("Model trained and saved!")
